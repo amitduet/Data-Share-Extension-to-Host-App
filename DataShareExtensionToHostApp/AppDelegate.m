@@ -48,4 +48,36 @@
 }
 
 
+#pragma mark Open URL Delegate 
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    
+    NSLog(@"options %@",options);
+    NSLog(@"URL scheme:%@", [url scheme]);
+    NSLog(@"URL query:1234 %@", [url query]);
+    
+    NSURLComponents *urlComponents;
+    NSArray* queryItems;
+    
+    // init
+    urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+    queryItems = [urlComponents queryItems];
+    
+    for (NSURLQueryItem* item in queryItems)
+    {
+        if ([[item name] isEqualToString:@"imageId"]){
+            NSLog(@"image Id %@",[item value]);
+        }
+        
+        if ([[item name] isEqualToString:@"categoryId"]){
+            NSLog(@"Category Id %@",[item value]);
+        }
+        
+    }
+    
+    return NO;
+}
+
+
 @end
