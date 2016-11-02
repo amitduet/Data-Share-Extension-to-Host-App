@@ -13,7 +13,36 @@
 		8FCF9D481DC9AD050027BEC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF9D461DC9AD050027BEC7 /* Main.storyboard */; };
 		8FCF9D4A1DC9AD050027BEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF9D491DC9AD050027BEC7 /* Assets.xcassets */; };
 		8FCF9D4D1DC9AD050027BEC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF9D4B1DC9AD050027BEC7 /* LaunchScreen.storyboard */; };
+		8FCF9D5B1DC9AD140027BEC7 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCF9D5A1DC9AD140027BEC7 /* Messages.framework */; };
+		8FCF9D5F1DC9AD140027BEC7 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF9D5E1DC9AD140027BEC7 /* MessagesViewController.m */; };
+		8FCF9D621DC9AD140027BEC7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF9D601DC9AD140027BEC7 /* MainInterface.storyboard */; };
+		8FCF9D641DC9AD140027BEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF9D631DC9AD140027BEC7 /* Assets.xcassets */; };
+		8FCF9D681DC9AD140027BEC7 /* MessageExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8FCF9D581DC9AD140027BEC7 /* MessageExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FCF9D661DC9AD140027BEC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FCF9D321DC9AD050027BEC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FCF9D571DC9AD140027BEC7;
+			remoteInfo = MessageExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FCF9D6C1DC9AD140027BEC7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FCF9D681DC9AD140027BEC7 /* MessageExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8FCF9D3A1DC9AD050027BEC7 /* DataShareExtensionToHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataShareExtensionToHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +55,13 @@
 		8FCF9D491DC9AD050027BEC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FCF9D4C1DC9AD050027BEC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FCF9D4E1DC9AD050027BEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCF9D581DC9AD140027BEC7 /* MessageExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCF9D5A1DC9AD140027BEC7 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		8FCF9D5D1DC9AD140027BEC7 /* MessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		8FCF9D5E1DC9AD140027BEC7 /* MessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		8FCF9D611DC9AD140027BEC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8FCF9D631DC9AD140027BEC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FCF9D651DC9AD140027BEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +72,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FCF9D551DC9AD140027BEC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCF9D5B1DC9AD140027BEC7 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				8FCF9D3C1DC9AD050027BEC7 /* DataShareExtensionToHostApp */,
+				8FCF9D5C1DC9AD140027BEC7 /* MessageExtension */,
+				8FCF9D591DC9AD140027BEC7 /* Frameworks */,
 				8FCF9D3B1DC9AD050027BEC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				8FCF9D3A1DC9AD050027BEC7 /* DataShareExtensionToHostApp.app */,
+				8FCF9D581DC9AD140027BEC7 /* MessageExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +126,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8FCF9D591DC9AD140027BEC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FCF9D5A1DC9AD140027BEC7 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FCF9D5C1DC9AD140027BEC7 /* MessageExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8FCF9D5D1DC9AD140027BEC7 /* MessagesViewController.h */,
+				8FCF9D5E1DC9AD140027BEC7 /* MessagesViewController.m */,
+				8FCF9D601DC9AD140027BEC7 /* MainInterface.storyboard */,
+				8FCF9D631DC9AD140027BEC7 /* Assets.xcassets */,
+				8FCF9D651DC9AD140027BEC7 /* Info.plist */,
+			);
+			path = MessageExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +156,34 @@
 				8FCF9D361DC9AD050027BEC7 /* Sources */,
 				8FCF9D371DC9AD050027BEC7 /* Frameworks */,
 				8FCF9D381DC9AD050027BEC7 /* Resources */,
+				8FCF9D6C1DC9AD140027BEC7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8FCF9D671DC9AD140027BEC7 /* PBXTargetDependency */,
 			);
 			name = DataShareExtensionToHostApp;
 			productName = DataShareExtensionToHostApp;
 			productReference = 8FCF9D3A1DC9AD050027BEC7 /* DataShareExtensionToHostApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8FCF9D571DC9AD140027BEC7 /* MessageExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FCF9D691DC9AD140027BEC7 /* Build configuration list for PBXNativeTarget "MessageExtension" */;
+			buildPhases = (
+				8FCF9D541DC9AD140027BEC7 /* Sources */,
+				8FCF9D551DC9AD140027BEC7 /* Frameworks */,
+				8FCF9D561DC9AD140027BEC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageExtension;
+			productName = MessageExtension;
+			productReference = 8FCF9D581DC9AD140027BEC7 /* MessageExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
@@ -109,6 +195,11 @@
 				ORGANIZATIONNAME = "Amit Chowdhury";
 				TargetAttributes = {
 					8FCF9D391DC9AD050027BEC7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 673BAG78VN;
+						ProvisioningStyle = Automatic;
+					};
+					8FCF9D571DC9AD140027BEC7 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 673BAG78VN;
 						ProvisioningStyle = Automatic;
@@ -129,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				8FCF9D391DC9AD050027BEC7 /* DataShareExtensionToHostApp */,
+				8FCF9D571DC9AD140027BEC7 /* MessageExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +233,15 @@
 				8FCF9D4D1DC9AD050027BEC7 /* LaunchScreen.storyboard in Resources */,
 				8FCF9D4A1DC9AD050027BEC7 /* Assets.xcassets in Resources */,
 				8FCF9D481DC9AD050027BEC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCF9D561DC9AD140027BEC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCF9D641DC9AD140027BEC7 /* Assets.xcassets in Resources */,
+				8FCF9D621DC9AD140027BEC7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +258,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FCF9D541DC9AD140027BEC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCF9D5F1DC9AD140027BEC7 /* MessagesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FCF9D671DC9AD140027BEC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FCF9D571DC9AD140027BEC7 /* MessageExtension */;
+			targetProxy = 8FCF9D661DC9AD140027BEC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8FCF9D461DC9AD050027BEC7 /* Main.storyboard */ = {
@@ -174,6 +291,14 @@
 				8FCF9D4C1DC9AD050027BEC7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8FCF9D601DC9AD140027BEC7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FCF9D611DC9AD140027BEC7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -293,6 +418,32 @@
 			};
 			name = Release;
 		};
+		8FCF9D6A1DC9AD140027BEC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 673BAG78VN;
+				INFOPLIST_FILE = MessageExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nestedapps.DataShareExtensionToHostApp.MessageExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8FCF9D6B1DC9AD140027BEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 673BAG78VN;
+				INFOPLIST_FILE = MessageExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nestedapps.DataShareExtensionToHostApp.MessageExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -310,6 +461,14 @@
 			buildConfigurations = (
 				8FCF9D521DC9AD050027BEC7 /* Debug */,
 				8FCF9D531DC9AD050027BEC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FCF9D691DC9AD140027BEC7 /* Build configuration list for PBXNativeTarget "MessageExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCF9D6A1DC9AD140027BEC7 /* Debug */,
+				8FCF9D6B1DC9AD140027BEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
