@@ -48,7 +48,7 @@
 			<string>url.Identifier</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>url.Schemes</string>
+				<string>com.avigitsaha.halloweenwallpaperhd.Schemes</string>
 			</array>
 		</dict>
 	</array>

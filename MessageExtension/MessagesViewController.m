@@ -75,14 +75,16 @@
 - (IBAction)openHostAppWithData:(UIButton *)sender {
     
     
-    NSString *customURL = [NSString stringWithFormat:@"here your yourl scheme://"];
+    NSString *customURL = [NSString stringWithFormat:@"com.avigitsaha.halloweenwallpaperhd.Schemes://"];
     
     NSURLComponents* urlComponents;
     urlComponents = [NSURLComponents componentsWithURL:[NSURL URLWithString:customURL] resolvingAgainstBaseURL:NO];
     
     [urlComponents setQueryItems:@[[NSURLQueryItem queryItemWithName:@"imageId" value:@"1"],[NSURLQueryItem queryItemWithName:@"categoryId" value:@"2"]
                                    ]];
-        
+    
+    
+    
     [self.extensionContext openURL:[urlComponents URL] completionHandler:^(BOOL success){
         NSLog(@"success %d",success);
     }];
